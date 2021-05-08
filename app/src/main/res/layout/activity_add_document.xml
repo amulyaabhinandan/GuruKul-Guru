@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_gradient"
+    android:orientation="vertical"
+    tools:context=".AddDocumentActivity">
+
+
+    <LinearLayout
+        android:id="@+id/document_selector_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/box_outline"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/add_logo"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_add_circle_outline_black_24dp" />
+
+        <TextView
+            android:id="@+id/add_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/borders_color"
+            android:textStyle="bold"
+            android:text="CLICK HERE TO SELECT FILE" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/topicof_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="TOPIC NAME"
+        android:textColorHint="@color/borders_color"
+        android:textColor="@color/borders_color"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/box_outline"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <Button
+        android:id="@+id/add_docs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:background="@drawable/my_custom_buttton_style"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"/>
+    <Button
+        android:id="@+id/reset_docs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:background="@drawable/my_custom_buttton_style"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"/>
+
+</LinearLayout>
